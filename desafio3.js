@@ -18,11 +18,21 @@ function minarray(arr) {
     return min;
 }
 
+function lenghtarray(arr) {
+    let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+        count++;
+    }   
+    return count;
+}
+
 const arr1 = [3, 1, 4, 1, 5, 9];
 console.log("Array:", arr1);
 console.log("Max:", maxarray(arr1));
 console.log("Min:", minarray(arr1));
+console.log("Length:", lenghtarray(arr1));
 const arr2 = [-7, -3, -2, -8, -1];
 console.log("Array:", arr2);
 console.log("Max:", maxarray(arr2));
 console.log("Min:", minarray(arr2));
+console.log("Length:", lenghtarray(arr2));
