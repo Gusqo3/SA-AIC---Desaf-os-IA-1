@@ -1,0 +1,28 @@
+function maxarray(arr) {
+    let max = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    return max;
+}
+
+function minarray(arr) {
+    let min = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] < min) {
+            min = arr[i];
+        }
+    }
+    return min;
+}
+
+const arr1 = [3, 1, 4, 1, 5, 9];
+console.log("Array:", arr1);
+console.log("Max:", maxarray(arr1));
+console.log("Min:", minarray(arr1));
+const arr2 = [-7, -3, -2, -8, -1];
+console.log("Array:", arr2);
+console.log("Max:", maxarray(arr2));
+console.log("Min:", minarray(arr2));
